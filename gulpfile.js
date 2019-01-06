@@ -112,16 +112,16 @@ gulp.task("build", gulp.series(
   gulp.parallel(
     "copy",
     "css"
-    ),
+  ),
   gulp.parallel(
     "images",
     "sprite",
-    ),
+  ),
   gulp.parallel(
     "webp",
     "html",
     "js"
-    )
+  )
 ));
 
 gulp.task("start", gulp.series(
@@ -129,12 +129,12 @@ gulp.task("start", gulp.series(
   gulp.parallel(
     "copy",
     "css"
-    ),
+  ),
   "sprite",
   gulp.parallel(
-		"webp",
+    "webp",
     "html",
     "js"
-    ),
+  ),
   "server"
 ));
