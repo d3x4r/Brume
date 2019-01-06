@@ -132,6 +132,7 @@ gulp.task("start", gulp.series(
     ),
   "sprite",
   gulp.parallel(
+		"webp",
     "html",
     "js"
     ),

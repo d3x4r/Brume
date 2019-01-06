@@ -64,7 +64,7 @@
       <a class="company-preview__button">Заказать дизайн</a>
     </section>
     <button class="move-down-button" type="button" aria-label="Переместиться ниже по странице"></button>
-    <ul class="site-navigation__social-list social-list">
+    <ul class="social-list">
       <li>
         <a href="#">
           <img class="social-list__vk" src="img/social-vk-desktop.png" alt="Ссылка на страницу vkontakte">
@@ -96,6 +96,136 @@
       </div>
     </section>
   </header>
+
+  <main>
+    <section class="advantage">
+      <h2 class="visually-hidden">Преимущества </h2>
+      <ul class="advantage__list">
+        <li class="advantage__item">
+          <span class="advantage__number">01</span>
+          <h3 class="advantage__title">Берем весь ремонт на себя</h3>
+          <p class="advantage__text">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться
+            завершения работ и наслаждаться результатом</p>
+        </li>
+        <li class="advantage__item">
+          <span class="advantage__number">02</span>
+          <h3 class="advantage__title">Мы - профессионалы своего дела</h3>
+          <p class="advantage__text">Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и тренинги а студия
+            уже реализовала свыше 1000 дизайн-проектов</p>
+        </li>
+        <li class="advantage__item">
+          <span class="advantage__number">03</span>
+          <h3 class="advantage__title">Наши проекты
+            индивидуальны</h3>
+          <p class="advantage__text">Каждый, созданный студией, интерьер - индивидуальное и максимально продуманное
+            решение для каждого вида помещения</p>
+        </li>
+        <li class="advantage__item">
+          <span class="advantage__number">04</span>
+          <h3 class="advantage__title">Рабатаем на выгодных
+            условиях</h3>
+          <p class="advantage__text">Ценовая политика студии очень лояльна, мы осуществляем контроль всего процесса
+            работы и получаем результат который делает клиентов счастивыми</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="portfolio">
+      <h2 class="portfolio__title">Портфолио</h2>
+      <div class="portfolio__filter-buttons">
+        <button class="portfolio__button" type="button">Все проекты</button>
+        <button class="portfolio__button" type="button">Дизайн интерьеров</button>
+        <button class="portfolio__button" type="button">Отделочные работы</button>
+      </div>
+      <div class="portfolio__slider">
+        <div class="portfolio-slide">
+          <h4 class="portfolio-slide-title">Дизайн столовой в стиле «Бохо»</h4>
+          <picture>
+            <source type="image/webp" srcset="img/portfolio-canteen-photo.webp">
+            <img class="portfolio-slide__image" src="img/portfolio-canteen-photo.jpg" alt="Дизайн столовой в стиле «Бохо»">
+          </picture>
+          <span class="portfolio-slide__type">Дизайн интерьера</span>
+        </div>
+        <div class="portfolio-slide">
+          <h4 class="portfolio-slide-title">Дизайн интерьера гостиной</h4>
+          <picture>
+            <source type="image/webp" media="(min-width: 1360px)" srcset="img/portfolio-lounge-wolf-photo-desktop.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/portfolio-lounge-wolf-photo-tablet.webp">
+            <source type="image/webp" srcset="img/portfolio-lounge-wolf-photo.webp">
+
+            <source media="(min-width: 1360px)" srcset="img/portfolio-lounge-wolf-photo-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/portfolio-lounge-wolf-photo-tablet.jpg">
+            <img class="portfolio-slide__image" src="img/portfolio-lounge-wolf-photo.jpg" alt="Дизайн интерьера гостиной">
+          </picture>
+          <span class="portfolio-slide__type">Дизайн интерьера</span>
+        </div>
+        <div class="portfolio-slide">
+          <h4 class="portfolio-slide-title">Дизайн интерьера гостиной</h4>
+          <picture>
+            <source type="image/webp" srcset="img/portfolio-lounge-photo.webp">
+            <img class="portfolio-slide__image" src="img/portfolio-lounge-photo.jpg" alt="Дизайн интерьера гостиной">
+          </picture>
+          <span class="portfolio-slide__type">Дизайн интерьера</span>
+        </div>
+        <div class="portfolio-slide">
+          <h4 class="portfolio-slide-title">Лофт интерьер
+            для отеля Hiloft</h4>
+          <picture>
+            <source type="image/webp" srcset="img/portfolio-loft-photo.webp">
+            <img class="portfolio-slide__image" src="img/portfolio-loft-photo.jpg" alt="Лофт интерьер
+              для отеля Hiloft">
+          </picture>
+          <span class="portfolio-slide__type">Дизайн интерьера</span>
+        </div>
+        <div class="portfolio__slider-buttons">
+          <button class="portfolio__slider-button" type="button" aria-label="Показать предыдущие слайды"></button>
+          <button class="portfolio__slider-button" type="button" aria-label="Показать следующие слайды"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+      <h2 class="service-title">Наши услуги</h2>
+      <div class="service-slider">
+        <ul class="service-slider__buttons">
+          <li class="service-slider__button">Дизайн жилого помещения</li>
+          <li class="service-slider__button">Дизайн отельных комнат</li>
+          <li class="service-slider__button service-slider__button--active">Дизайн коммерческих
+            объектов</li>
+          <li class="service-slider__button">Ремонт под ключ</li>
+          <li class="service-slider__button">Отделочные работы</li>
+          <li class="service-slider__button">Выезд дизайнера на дом</li>
+        </ul>
+        <div class="service-slider__slide">
+          <picture>
+            <source type="image/webp" media="(min-width: 1360px)" srcset="img/service-slide-desktop.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/service-slide-tablet.webp">
+            <source type="image/webp" srcset="img/service-slide-mobile.webp">
+
+            <source media="(min-width: 1360px)" srcset="img/service-slide-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/service-slide-tablet.jpg">
+            <img class="service-slider__image" src="img/service-slide-mobile.jpg" alt="Дизайн коммерческих
+            объектов">
+          </picture>
+          <h3 class="service-slider__title">Дизайн коммерческих обьектов</h3>
+          <p class="service-slider__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
+            коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова
+            и снова</p>
+          <span class="service-slider__project-count">532 проекта</span>
+          <a class="service-slider__button" href="#">Консультация</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-presentation">
+      <h3 class="video-presentation__title">О студии дизайна интерьеров BRUME за 2 минуты</h3>
+      <picture>
+        <source type="image/webp" srcset="img/video_preview.webp">
+        <img class="video-presentation__image" src="img/video_preview.jpg" alt="Предпросмотр видео">
+      </picture>
+      <a class="video-presentation__video" href="#" aria-label="Ссылка на видео"></a>
+    </section>
+  </main>
   <!-- <script src="js/script.js"></script> -->
 </body>
 
