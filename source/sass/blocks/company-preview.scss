@@ -1,0 +1,53 @@
+.company-preview {
+  position: relative;
+  margin-top: 116px;
+
+  text-align: center;
+  z-index: 2;
+}
+
+.company-preview__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+}
+
+.company-preview__text {
+  margin-bottom: 27px;
+
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+.company-preview__button {
+  box-sizing: border-box;
+  display: block;
+
+  width: 223px;
+  height: 54px;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  padding-top: 14px;
+  padding-right: 5px;
+  padding-left: 10px;
+
+
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  border: 1px solid #ffffff;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f8a25a;
+
+    border-color: transparent;
+  }
+}

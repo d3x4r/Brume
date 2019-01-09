@@ -5,48 +5,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Brume - Дизайн интерьеров</title>
+  <link rel="stylesheet" href="pixelglass/image.css">
+  <link rel="stylesheet" href="pixelglass/styles.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <picture>
-      <source media="(min-width: 1360px)" srcset="img/logo-desktop.png">
-      <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
-      <img class="page-header__logo" src="img/logo-mobile.png" alt="Логотип">
-    </picture>
+    <div class="page-header__container">
+
     <nav class="site-navigation">
-      <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
+      <div class="site-navigation__top-container">
+        <a class="site-navigation__main-link" href="#">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/logo-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+            <img class="page-header__logo" src="img/logo-mobile.png" alt="Логотип">
+          </picture>
+        </a>
+        <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
+        <span class="phone-number">+7 (800) 823 48 88</span>
+      </div>
       <ul class="site-navigation__list">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Преимущества</a></li>
-        <li><a href="#">Портфолио</a></li>
-        <li><a href="#">Наши услуги</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Главная</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link site-navigation__link--active" href="#">Преимущества</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Портфолио</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Наши услуги</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Отзывы</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
         <li>
           <ul class="social-list social-list--site-navigation">
-            <li>
-              <a href="#" aria-label="Ссылка на страницу vkontakte"></a>
+            <li class="social-list__vk">
+              <a class="social-list__link" href="#" aria-label="Ссылка на страницу vkontakte"></a>
             </li>
-            <li>
-              <a href="#" aria-label="Ссылка на страницу instagram"></a>
+            <li class="social-list__instagram">
+              <a class="social-list__link" href="#" aria-label="Ссылка на страницу instagram"></a>
             </li>
-            <li>
-              <a href="#" aria-label="Ссылка на страницу facebook"></a>
+            <li class="social-list__fb">
+              <a class="social-list__link" href="#" aria-label="Ссылка на страницу facebook"></a>
             </li>
           </ul>
         </li>
       </ul>
     </nav>
-    <span class="phone-number">+7 (800) 823 48 88</span>
     <section class="company-preview">
-      <h1 class="company-preview__title">Дизайн интерьеров</h1>
+      <h1 class="company-preview__title title title--main">Дизайн интерьеров</h1>
       <p class="company-preview__text">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
       <a class="company-preview__button">Заказать дизайн</a>
     </section>
-    <button class="move-down-button" type="button" aria-label="Переместиться ниже по странице"></button>
-    <ul class="social-list social-list social-list--header-desktop">
+    <a class="move-down-button" href="#" aria-label="Переместиться ниже по странице">
+      <span class="move-down-button__arrow"></span>
+    </a>
+    <ul class="social-list social-list--header-desktop">
       <li>
         <a href="#" aria-label="Ссылка на страницу vkontakte"></a>
       </li>
@@ -71,6 +81,7 @@
         <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
       </div>
     </section>
+  </div>
   </header>
 
   <main>
@@ -319,7 +330,7 @@
     <p class="copyright footer-text">BRUME interior, 2017</p>
     <p class="developers footer-text">HolodnayaDesign</p>
   </footer>
-  <!-- <script src="js/script.js"></script> -->
+  <script src="pixelglass/script.js"></script>
 </body>
 
 </html>

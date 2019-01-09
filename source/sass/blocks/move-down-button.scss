@@ -1,0 +1,43 @@
+
+.move-down-button {
+  position: relative;
+  display: block;
+  width: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  cursor: pointer;
+  z-index: 2;
+}
+
+.move-down-button__arrow {
+  position: relative;
+  display: block;
+  width: 3px;
+  height: 58px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: rgb(165, 173, 179);
+  border: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 3px;
+
+    bottom: 0;
+    left: -1px;
+
+    transform: rotate(-45deg);
+    background-color: rgb(165, 173, 179);
+  }
+
+  &::after {
+    transform: rotate(-135deg);
+    left: -5px;
+  }
+}
