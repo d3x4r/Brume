@@ -26,7 +26,6 @@
   display: block;
 
   width: 223px;
-  height: 54px;
 
   margin-right: auto;
   margin-left: auto;
@@ -35,6 +34,7 @@
   padding-top: 14px;
   padding-right: 5px;
   padding-left: 10px;
+  padding-bottom: 15px;
 
 
   font-family: "Raleway", "Arial", sans-serif;
@@ -74,13 +74,61 @@
 
   .company-preview__button {
     width: 439px;
-    height: 110px;
 
     margin-bottom: 104px;
     padding-top: 38px;
+    padding-bottom: 36px;
 
     font-size: 30px;
     line-height: 34px;
     letter-spacing: 3.5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .company-preview {
+    width: 487px;
+
+    margin-top: 200px;
+    margin-left: 93px;
+    margin-bottom: 191px;
+
+    text-align: left;
+  }
+
+  .company-preview__title {
+    width: 100%;
+
+    margin-bottom: 27px;
+  }
+
+  .company-preview__text {
+    width: 346px;
+
+    margin-bottom: 35px;
+    padding-left: 3px;
+
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+
+  .company-preview__button {
+    width: 277px;
+
+    margin: 0;
+    margin-left: 4px;
+    padding-top: 17px;
+    padding-right: 75px;
+    padding-left: 29px;
+    padding-bottom: 18px;
+
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+    background-image: url("../img/order-buy-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 88% 50%;
   }
 }

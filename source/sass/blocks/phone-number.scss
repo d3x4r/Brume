@@ -1,3 +1,30 @@
 .phone-number {
   display: none;
 }
+
+@media (min-width: $desktop-width) {
+  .phone-number {
+    position: relative;
+    display: block;
+    order: 3;
+
+    margin-top: 4px;
+
+    color: #252525;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 12px;
+      height: 15px;
+
+      top: 6px;
+      left: -20px;
+
+      background-image: url("../img/icon-phone.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

@@ -50,3 +50,32 @@
     height: 45px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-width: 1170px;
+    max-width: 1360px;
+
+    margin: 0 auto;
+    padding-top: 21px;
+    padding-bottom: 22px;
+
+    background: linear-gradient(to right, rgba(17, 37, 55, 0.88) 50%, rgba(0, 0, 0, 0) 50%);
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .page-header__container {
+    position: relative;
+    width: 1163px;
+    margin-left: auto;
+  }
+
+  .page-header__logo {
+    width: 98px;
+    height: 29px;
+    order: 10;
+  }
+}

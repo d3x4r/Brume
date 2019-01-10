@@ -1,3 +1,34 @@
 .slider-controls {
   display: none;
 }
+
+@media (min-width: $desktop-width) {
+  .slider-controls {
+    display: flex;
+    justify-content: space-between;
+
+    width: 140px;
+    height: 3px;
+
+    margin-top: 40px;
+    margin-left: auto;
+  }
+
+  .slider-controls__button {
+    width: 25px;
+    height: 3px;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    background-color: #cdd3cf;
+
+
+    cursor: pointer;
+
+    &--active {
+      background-color: #1a444a;
+    }
+  }
+}

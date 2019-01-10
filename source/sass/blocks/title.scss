@@ -21,3 +21,11 @@
     letter-spacing: 2px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .title--main {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 2px;
+  }
+}
