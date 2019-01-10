@@ -41,3 +41,28 @@
     left: -5px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .move-down-button {
+    padding-right: 3px;
+  }
+
+  .move-down-button__arrow {
+    width: 5px;
+    height: 80px;
+
+    &::before,
+    &::after {
+      width: 15px;
+      height: 4px;
+    }
+
+    &::before {
+      left: -1px;
+    }
+
+    &::after {
+      left: -9px;
+    }
+  }
+}

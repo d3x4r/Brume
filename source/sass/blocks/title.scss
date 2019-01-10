@@ -13,3 +13,11 @@
   color: #ffffff;
   letter-spacing: 1px;
 }
+
+@media (min-width: $tablet-width) {
+  .title--main {
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: 2px;
+  }
+}

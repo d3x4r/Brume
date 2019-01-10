@@ -20,7 +20,7 @@
 }
 
 .page-header__container {
-  width: 289px;
+  width: 90%;
   margin: 0 auto;
 
   padding-bottom: 29px;
@@ -32,4 +32,21 @@
   height: 23px;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 61px;
+
+    background-position: 82% 50%;
+  }
+
+  .page-header__container {
+    padding-bottom: 13px;
+  }
+
+  .page-header__logo {
+    width: 154px;
+    height: 45px;
+  }
 }
