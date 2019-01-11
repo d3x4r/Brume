@@ -1,0 +1,17 @@
+.list-text {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #838383;
+  letter-spacing: 1px;
+}
+
+@media (min-width: $desktop-width) {
+  .list-text {
+    font-size: 16px;
+  }
+}

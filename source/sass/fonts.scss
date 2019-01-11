@@ -10,23 +10,23 @@
 }
 
 @font-face {
-  font-family: "Playfair Display";
-  src: local("Playfair Display Bold"),
-    local("PlayfairDisplay-Bold"),
-    url("../fonts/playfairdisplaybold.woff") format("woff"),
-    url("../fonts/playfairdisplaybold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Raleway";
   src: local("Raleway-SemiBold"),
     local("PlayfairSemi-Bold"),
     url("../fonts/ralewaysemibold.woff") format("woff"),
     url("../fonts/ralewaysemibold.woff2") format("woff2");
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display Bold"),
+    local("PlayfairDisplay-Bold"),
+    url("../fonts/playfairdisplaybold.woff") format("woff"),
+    url("../fonts/playfairdisplaybold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }

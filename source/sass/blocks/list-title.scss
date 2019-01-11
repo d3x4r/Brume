@@ -1,0 +1,16 @@
+.list-title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #1a292f;
+}
+
+@media (min-width: $desktop-width) {
+  .list-title {
+    font-size: 22px;
+  }
+}
