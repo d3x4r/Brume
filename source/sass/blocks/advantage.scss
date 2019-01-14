@@ -1,6 +1,7 @@
 .advantage {
   width: 91%;
   margin: 0 auto;
+  margin-bottom: 76px;
 }
 
 .advantage__list {
@@ -50,6 +51,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .advantage {
+    margin-bottom: 151px;
+  }
+
   .advantage__list {
     display: flex;
     flex-wrap: wrap;
