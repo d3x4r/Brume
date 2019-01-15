@@ -57,3 +57,43 @@
     margin-right: 69px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .portfolio {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  .portfolio__title {
+    margin-left: 2px;
+    margin-bottom: 54px;
+
+    text-align: left;
+  }
+
+  .portfolio__filter-buttons {
+    width: 1170px;
+    align-items: flex-start;
+
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .portfolio__button {
+    width: auto;
+    max-width: 200px;
+
+    margin-right: 63px;
+
+    font-size: 18px;
+
+    &--active {
+      padding-bottom: 9px;
+      border-bottom: 1px solid #182c3d;
+    }
+  }
+
+  .portfolio__button:nth-child(3n + 2) {
+    margin-right: 60px;
+  }
+}

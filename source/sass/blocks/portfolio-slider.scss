@@ -28,3 +28,48 @@
     left: -73vw;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .portfolio-slider {
+    height: 551px;
+  }
+
+  .portfolio-slider__container {
+    left: 0;
+  }
+
+  .portfolio-slider__buttons {
+    display: block;
+  }
+
+  .portfolio-slider__button {
+    position: absolute;
+
+    width: 38px;
+    height: 12px;
+
+    top: 41.1%;
+
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+
+    cursor: pointer;
+
+    &--left {
+      background-image: url("../img/portfolio-arrow-left.svg");
+      background-repeat: no-repeat;
+
+      left: 36px;
+    }
+
+    &--right {
+      background-image: url("../img/portfolio-arrow-right.svg");
+      background-repeat: no-repeat;
+
+      right: 31px;
+    }
+  }
+}

@@ -64,6 +64,10 @@
   display: none;
 }
 
+.portfolio-slide__link {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .portfolio-slide {
     min-width: 78%;
@@ -73,5 +77,150 @@
 
   .portfolio-slide__image-container {
     height: 611px;
+  }
+
+  .portfolio-slide__image {
+    min-width: 1149px;
+  }
+
+  .portfolio-slide--active .portfolio-slide__title {
+    font-size: 20px;
+  }
+
+  .portfolio-slide--active .portfolio-slide__image-container {
+    margin-bottom: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .portfolio-slide {
+    position: relative;
+    min-width: 260px;
+
+    margin-right: 0;
+
+    &--active {
+      width: 390px;
+    }
+
+    &--canteen {
+      order: 3;
+    }
+
+    &--living-room-1 {
+      order: 2;
+    }
+
+    &--living-room-2 {
+      order: 1;
+    }
+
+    &--hotel {
+      order: 4;
+    }
+  }
+
+  .portfolio-slide__image-container {
+    height: 552px;
+    background-color: rgba(0, 32, 58, 0.7);
+  }
+
+  .portfolio-slide__image {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+
+    &--canteen {
+      min-width: 839px;
+      left: -32%;
+    }
+
+    &--living-room-1 {
+      min-width: 999px;
+      left: -69%;
+    }
+
+    &--living-room-2 {
+      min-width: 416px;
+      min-height: auto;
+    }
+
+    &--hotel {
+      min-width: 806px;
+      left: -144%;
+    }
+  }
+
+  .portfolio-slide__title {
+    position: absolute;
+    display: block;
+
+    width: 157px;
+    margin: 0;
+    margin-top: 28px;
+    margin-left: 29px;
+
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+
+    z-index: 2;
+  }
+
+  .portfolio-slide__type {
+    position: absolute;
+    display: block;
+    width: 218px;
+
+    bottom: 181px;
+    left: -75px;
+
+    transform: rotate(-90deg);
+
+    font-family: "Raleway", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: 1.05px;
+  }
+
+  .portfolio-slide--active .portfolio-slide__title,
+  .portfolio-slide--active .portfolio-slide__type {
+    display: none;
+  }
+
+  .portfolio-slide__link {
+    display: block;
+    position: absolute;
+
+    top: calc(46% - 42px);
+    left: calc(51% - 42px);
+
+    width: 84px;
+    height: 84px;
+
+    border-radius: 50%;
+    background-color: rgba(254, 188, 128, 0.95);
+  }
+
+  .portfolio-slide__link::before,
+  .portfolio-slide__link::after {
+    position: absolute;
+
+    content: "";
+
+    width: 27px;
+    height: 3px;
+
+    top: calc(50% - 1.5px);
+    left: calc(50% - 13.5px);
+
+    background-color: #ffffff;
+  }
+
+  .portfolio-slide__link::after {
+    transform: rotate(-90deg);
   }
 }
