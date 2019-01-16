@@ -180,28 +180,40 @@
     <section class="service">
       <h2 class="service-title section-title">Наши услуги</h2>
       <div class="service-slider">
-        <ul class="service-slider__buttons">
-          <li class="service-slider__button">Дизайн жилого помещения</li>
-          <li class="service-slider__button">Дизайн отельных комнат</li>
-          <li class="service-slider__button service-slider__button--active">Дизайн коммерческих
+        <ul class="service-slider__switch-buttons">
+          <li class="service-slider__switch-button">Дизайн жилого помещения</li>
+          <li class="service-slider__switch-button">Дизайн отельных комнат</li>
+          <li class="service-slider__switch-button service-slider__switch-button--active">Дизайн коммерческих
             объектов</li>
-          <li class="service-slider__button">Ремонт под ключ</li>
-          <li class="service-slider__button">Отделочные работы</li>
-          <li class="service-slider__button">Выезд дизайнера на дом</li>
+          <li class="service-slider__switch-button">Ремонт под ключ</li>
+          <li class="service-slider__switch-button">Отделочные работы</li>
+          <li class="service-slider__switch-button">Выезд дизайнера на дом</li>
         </ul>
         <div class="service-slider__slide">
-          <picture>
-            <source type="image/webp" media="(min-width: 1360px)" srcset="img/service-slide-desktop.webp">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/service-slide-tablet.webp">
-            <source type="image/webp" srcset="img/service-slide-mobile.webp">
+          <!-- <div class="service-slider__image-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1360px)" srcset="img/service-slide-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/service-slide-tablet.webp">
+              <source type="image/webp" srcset="img/service-slide-mobile.webp">
 
-            <source media="(min-width: 1360px)" srcset="img/service-slide-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/service-slide-tablet.jpg">
-            <img class="service-slider__image" src="img/service-slide-mobile.jpg" alt="Дизайн коммерческих
-            объектов">
-          </picture>
+              <source media="(min-width: 1360px)" srcset="img/service-slide-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/service-slide-tablet.jpg">
+              <img class="service-slider__image" src="img/service-slide-mobile.jpg" alt="Дизайн коммерческих
+              объектов">
+            </picture>
+          </div> -->
+          <div class="service-slider__image-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1360px)" srcset="img/service-slide-desktop.webp">
+              <source type="image/webp" srcset="img/service-slide-tablet.webp">
+
+              <source media="(min-width: 1360px)" srcset="img/service-slide-desktop.jpg">
+              <img class="service-slider__image" src="img/service-slide-tablet.jpg" alt="Дизайн коммерческих
+              объектов">
+            </picture>
+          </div>
           <h3 class="service-slider__title">Дизайн коммерческих обьектов</h3>
-          <p class="service-slider__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
+          <p class="service-slider__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает
             коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова
             и снова</p>
           <span class="service-slider__project-count">532 проекта</span>

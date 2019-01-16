@@ -1,0 +1,15 @@
+.service-title {
+  width: 316px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .service-title {
+    width: 450px;
+
+    margin-bottom: 47px;
+    margin-left: 39px;
+
+    text-align: left;
+  }
+}
