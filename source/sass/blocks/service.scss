@@ -8,7 +8,26 @@
     width: 450px;
 
     margin-bottom: 47px;
-    margin-left: 39px;
+    margin-left: calc(50% - 345px);
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service {
+    width: 1170px;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .service-title {
+    width: 450px;
+
+    margin: 0;
+    margin-left: 2px;
+    margin-bottom: 66px;
 
     text-align: left;
   }

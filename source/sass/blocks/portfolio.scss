@@ -44,7 +44,7 @@
   }
 
   .portfolio__title {
-    margin-left: 12px;
+    margin-left: calc(50% - 372px);
     margin-bottom: 40px;
   }
 
@@ -70,6 +70,7 @@
   .portfolio {
     width: 1170px;
     margin: 0 auto;
+    margin-bottom: 123px;
   }
 
   .portfolio__title {
