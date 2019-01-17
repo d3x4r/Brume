@@ -1,9 +1,17 @@
+.service {
+  margin-bottom: 109px;
+}
+
 .service-title {
   width: 316px;
   margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
+  .service {
+    margin-bottom: 198px;
+  }
+
   .service-title {
     width: 450px;
 
@@ -20,6 +28,7 @@
 
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 68px;
   }
 
   .service-title {
