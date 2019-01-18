@@ -27,7 +27,8 @@
 }
 
 .advantage__title {
-  width: 289px;
+  // width: 289px;
+  width: 98%;
 
   margin-right: auto;
   margin-left: auto;
@@ -53,6 +54,10 @@
 @media (min-width: $tablet-width) {
   .advantage {
     margin-bottom: 151px;
+  }
+
+  .advantage__title {
+    width: auto;
   }
 
   .advantage__list {
