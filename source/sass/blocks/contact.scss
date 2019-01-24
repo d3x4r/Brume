@@ -216,3 +216,104 @@
     line-height: 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contact {
+    max-width: 1360px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 82px;
+
+    background-image: linear-gradient(to left, transparent 50%, rgba(24, 44, 61, 0.9) 50%),
+      url("../img/contact-background.jpg");
+    background-size: auto, 1363px 901px;
+    background-position: 63.7% 87%;
+  }
+
+  .break-new-line-for-pp {
+    display: none;
+  }
+
+  .contact__wrapper {
+    width: 680px;
+
+    margin: 0;
+    margin-left: auto;
+    margin-right: 42%;
+    // margin-right: 300px;
+  }
+
+  .contact__title {
+    width: 520px;
+    max-width: none;
+
+    margin: 0;
+    margin-top: 68px;
+    padding-left: 9px;
+
+    font-size: 40px;
+    line-height: 46px;
+    text-align: left;
+    letter-spacing: 0.89px;
+  }
+
+  .contact__text {
+    width: 445px;
+    max-width: none;
+
+    margin: 0;
+    margin-top: 18px;
+    margin-left: 12px;
+
+    font-size: 14px;
+
+    text-align: left;
+    letter-spacing: 0.7px;
+  }
+
+  .contact-form {
+    width: 71.6%;
+
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .contact-form__item {
+    margin-bottom: 34px;
+
+    &--name::before {
+      top: 3px;
+    }
+
+    &--email::before {
+      top: 5px;
+    }
+  }
+
+  .contact-form__input {
+    padding-bottom: 13px;
+
+    font-size: 14px;
+  }
+
+  .contact-form__button {
+    margin-top: 12px;
+
+    padding-top: 24px;
+    padding-bottom: 20px;
+
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 1.5px;
+  }
+
+  .contact-form__terms-agree-text {
+    margin-top: 21px;
+
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    line-height: 17px;
+    text-align: left;
+  }
+}
