@@ -21,3 +21,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+::-moz-placeholder,
+:-moz-placeholder {
+  opacity: 1;
+}
+
