@@ -291,19 +291,26 @@
       <h2 class="comment__title section-title">Отзывы наших клиентов</h2>
       <div class="comment-slider">
         <div class="comment-slider__wrapper">
-          <article class="comment-slide">
+          <article class="comment-slide comment-slide--first-slide">
             <picture class="comment-slide__image-container">
               <source type="image/webp" srcset="img/comment-user-1.webp">
-              <img class="comment-slide__image" src="img/comment-user-1.jpg" alt="Предпросмотр видео">
+              <img class="comment-slide__image" src="img/comment-user-1.jpg" width="201" height="192" alt="Автор отзыва">
             </picture>
+            <div class="comment-slide__text-wrapper">
+              <h4 class="comment-slide__author">Автор отзыва</h4>
+              <span class="comment-slide__service-title">Услуга: инерьер детской</span>
+              <p class="comment-slide__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet adipisci, voluptate ducimus praesentium hic repellat et maxime! Non soluta molestiae, corrupti temporibus tempora deserunt iste iusto cumque itaque, quaerat consequuntur.</p>
+            </div>
           </article>
           <article class="comment-slide comment-slide--active">
             <picture class="comment-slide__image-container">
               <source type="image/webp" srcset="img/comment-user-2.webp">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/comment-user-2-tablet.webp">
+              <source type="image/webp" media="(min-width: 1170px)" srcset="img/img/comment-user-2.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/comment-user-2-tablet.webp">
 
-                <source media="(min-width: 768px)" srcset="img/comment-user-2-tablet.jpg">
-              <img class="comment-slide__image" src="img/comment-user-2.jpg" alt="Предпросмотр видео">
+              <source media="(min-width: 1170px)" srcset="img/comment-user-2.jpg">
+              <source media="(min-width: 768px)" srcset="img/comment-user-2-tablet.jpg">
+              <img class="comment-slide__image" src="img/comment-user-2.jpg" alt="Автор отзыва">
             </picture>
             <div class="comment-slide__text-wrapper">
               <h4 class="comment-slide__author">Александра Холодная</h4>
@@ -313,11 +320,16 @@
                 В&nbsp;следующий раз обратимся к BRUME!</p>
             </div>
           </article>
-          <article class="comment-slide">
-            <picture>
+          <article class="comment-slide comment-slide--third-slide">
+            <picture class="comment-slide__image-container">
               <source type="image/webp" srcset="img/comment-user-3.webp">
-              <img class="comment-slide__image" src="img/comment-user-3.jpg" alt="Предпросмотр видео">
+              <img class="comment-slide__image" src="img/comment-user-3.jpg" width="192" height="192" alt="Автор отзыва">
             </picture>
+            <div class="comment-slide__text-wrapper">
+              <h4 class="comment-slide__author">Автор отзыв</h4>
+              <span class="comment-slide__service-title">Услуга: инерьер детской</span>
+              <p class="comment-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, consectetur. Repellat nihil sit maiores modi, mollitia obcaecati, aut dolor voluptatibus quidem corporis, et numquam atque incidunt asperiores! Corrupti, sapiente magnam.</p>
+            </div>
           </article>
         </div>
         <div class="comment__slider-controls slider-controls">

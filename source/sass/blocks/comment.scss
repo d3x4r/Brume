@@ -14,3 +14,9 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comment__title {
+    margin-left: calc(50% - 584px);
+  }
+}

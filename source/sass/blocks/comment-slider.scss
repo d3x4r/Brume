@@ -39,3 +39,27 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .comment-slider {
+    max-width: 1360px;
+    min-width: 1170px;
+    width: 100vw;
+
+
+    margin: auto;
+    margin-top: 44px;
+  }
+
+  .comment-slider__wrapper {
+    max-width: 1360px;
+    min-width: 1170px;
+    width: 100vw;
+    margin: auto;
+  }
+
+  .comment__slider-controls {
+    margin: 0 auto;
+    margin-top: 81px;
+  }
+}
+
