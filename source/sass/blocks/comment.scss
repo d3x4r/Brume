@@ -3,3 +3,14 @@
 
   line-height: 54px;
 }
+
+@media (min-width: $tablet-width) {
+  .comment__title {
+    width: 576px;
+    max-width: none;
+
+    margin-left: calc(50% - 350px);
+
+    text-align: left;
+  }
+}

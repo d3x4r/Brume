@@ -21,3 +21,21 @@
   margin-top: 48px;
 }
 
+@media (min-width: $tablet-width) {
+  .comment-slider {
+    width: 95.6%;
+    max-width: 733px;
+
+    margin: 0;
+    margin-top: 10px;
+
+    margin-left: calc(50% - 350px);
+  }
+
+  .comment__slider-controls {
+    margin: 0;
+    margin-top: 62px;
+    margin-left: calc(50% - 91px);
+  }
+}
+

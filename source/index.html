@@ -292,15 +292,18 @@
       <div class="comment-slider">
         <div class="comment-slider__wrapper">
           <article class="comment-slide">
-            <picture>
+            <picture class="comment-slide__image-container">
               <source type="image/webp" srcset="img/comment-user-1.webp">
               <img class="comment-slide__image" src="img/comment-user-1.jpg" alt="Предпросмотр видео">
             </picture>
           </article>
           <article class="comment-slide comment-slide--active">
-            <picture>
+            <picture class="comment-slide__image-container">
               <source type="image/webp" srcset="img/comment-user-2.webp">
-              <img class="comment-slide__image" src="img/comment-user-2.jpg" width="215" height="192" alt="Предпросмотр видео">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/comment-user-2-tablet.webp">
+
+                <source media="(min-width: 768px)" srcset="img/comment-user-2-tablet.jpg">
+              <img class="comment-slide__image" src="img/comment-user-2.jpg" alt="Предпросмотр видео">
             </picture>
             <div class="comment-slide__text-wrapper">
               <h4 class="comment-slide__author">Александра Холодная</h4>

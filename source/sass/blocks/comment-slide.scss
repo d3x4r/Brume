@@ -12,6 +12,8 @@
 
 .comment-slide__image {
   display: block;
+  width: 215px;
+  height: 192px;
 
   margin-top: -38px;
   margin-right: auto;
@@ -58,4 +60,70 @@
   line-height: 30px;
   letter-spacing: 0;
   color: #5e5e5e;
+}
+
+@media (min-width: $tablet-width) {
+  .comment-slide {
+
+    display: flex;
+    // justify-content: space-between;
+
+    padding-bottom: 43px;
+
+    align-items: flex-start;
+
+    background: linear-gradient(to right, #ffffff 88.8%, transparent 88.8%);
+  }
+
+  .comment-slide__text-wrapper {
+    order: 1;
+    flex-shrink: 0;
+
+    width: 62%;
+
+    margin: 0;
+    margin-left: 71px;
+
+    text-align: left;
+  }
+
+  .comment-slide__image-container {
+    order: 2;
+
+    width: 187px;
+    height: 192px;
+
+    margin-left: 3%;
+    margin-top: 38px;
+
+    flex-shrink: 0;
+  }
+
+  .comment-slide__image {
+    margin: 0;
+
+    width: 187px;
+    height: 192px;
+  }
+
+  .comment-slide__author {
+    margin-top: 47px;
+
+    font-size: 22px;
+  }
+
+  .comment-slide__service-title {
+    margin-top: 7px;
+
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.2px;
+  }
+
+  .comment-slide__text {
+    margin-top: 23px;
+
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
