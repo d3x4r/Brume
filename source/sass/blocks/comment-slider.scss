@@ -1,0 +1,23 @@
+.comment-slider {
+  width: 93.2%;
+  min-height: 619px;
+
+  margin-top: 38px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.comment-slider__wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.comment__slider-controls {
+  display: flex;
+
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+}
+
