@@ -1,0 +1,37 @@
+.footer-text {
+  width: 200px;
+
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: #ffc487;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-text {
+    margin-top: 115px;
+
+    font-size: 16px;
+  }
+
+  .footer-text--copyright {
+    order: 1;
+
+    margin-left: 30px;
+
+    &::after {
+      content: "\2003 \©";
+    }
+  }
+
+  .footer-text--developers {
+    order: 3;
+
+    margin-right: 8px;
+  }
+}

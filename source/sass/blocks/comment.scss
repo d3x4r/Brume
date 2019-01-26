@@ -1,3 +1,7 @@
+.comment {
+  margin-bottom: 149px;
+}
+
 .comment__title {
   max-width: 613px;
 
@@ -5,6 +9,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .comment {
+    margin-bottom: 157px;
+  }
+
   .comment__title {
     width: 576px;
     max-width: none;
