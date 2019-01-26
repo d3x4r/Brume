@@ -35,3 +35,14 @@
     margin-right: 8px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-text--copyright {
+    margin-left: calc(50% - 586px);
+  }
+
+  .footer-text--developers {
+    margin-right: calc(50% - 585px);
+    text-align: right;
+  }
+}

@@ -41,3 +41,16 @@
     margin-right: 28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  // .page-footer {
+  //   max-width: 1360px;
+
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
+
+  .page-footer__logo {
+    margin-right: 4px;
+  }
+}

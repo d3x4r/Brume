@@ -24,6 +24,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .comment {
+    margin-bottom: 160px;
+  }
+
   .comment__title {
     margin-left: calc(50% - 584px);
   }
