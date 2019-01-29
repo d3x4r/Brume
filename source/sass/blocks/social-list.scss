@@ -46,6 +46,9 @@
   }
 }
 
+.social-list--header-desktop {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .social-list {
