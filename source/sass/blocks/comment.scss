@@ -25,6 +25,7 @@
 
 @media (min-width: $desktop-width) {
   .comment {
+    overflow-x: hidden;
     margin-bottom: 160px;
   }
 

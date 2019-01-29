@@ -17,6 +17,10 @@
   background-color: transparent;
 
   cursor: pointer;
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .site-navigation__toggle::before {
@@ -32,11 +36,14 @@
     0 20px 0 0 #ffffff;
 
   background-color: #ffffff;
+
+  transition: box-shadow 0.2s linear, width 0.3s linear, height 0.1s linear;
 }
 
 .site-navigation__toggle--open {
   width: 25px;
   height: 25px;
+
 
   z-index: 6;
 
@@ -46,11 +53,13 @@
     content: "";
     width: 35px;
     height: 2px;
+
     top: 5px;
     left: -5px;
 
     box-shadow: none;
     background-color: #ffffff;
+    transition: none;
   }
 
   &::before {
@@ -60,6 +69,11 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+
+.site-navigation__toggle--open:hover::after {
+  background-color: red;
 }
 
 .site-navigation__list {
@@ -87,7 +101,8 @@
 }
 
 .site-navigation__link {
-  display: block;
+  position: relative;
+
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 20px;
   line-height: 42px;
@@ -95,17 +110,114 @@
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
 
-  margin-bottom: 18px;
+  transition: all 0.2s linear;
 
-  &--active {
-    color: #f8a25a;
-    letter-spacing: 1.9px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    bottom: -6px;
+    left: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #f8a25a;
+
+    transition: all 0.4s linear;
   }
+
+  &:hover {
+    color: #f8a25a;
+    letter-spacing: 3px;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.site-navigation__item {
+  width: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.site-navigation__link:hover::before {
+  width: 100%;
+}
+
+.site-navigation__toggle-arrow {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    background-color: #ffffff;
+
+    left: -1px;
+    transition: all 0.1s linear;
+  }
+
+  &::before {
+    top: calc(50% - 6px);
+    left: -1px;
+
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    top: calc(50% + 3px);
+    transform: rotate(45deg);
+  }
+}
+
+.site-navigation__toggle:hover::before {
+  top: calc(50% - 2px);
+  box-shadow: none;
+
+  background-color: #f8a25a;
+}
+
+.site-navigation__toggle:hover .site-navigation__toggle-arrow::before,
+.site-navigation__toggle:hover .site-navigation__toggle-arrow::after {
+  display: block;
+  width: 12px;
+  height: 2px;
+  background-color: #f8a25a;
+}
+
+
+.site-navigation__toggle--open:hover .site-navigation__toggle-arrow::before,
+.site-navigation__toggle--open:hover .site-navigation__toggle-arrow::after {
+  display: none;
+}
+
+.site-navigation__toggle--open:hover::before {
+  top: 5px;
+  background-color: red;
 }
 
 .site-navigation__item:nth-child(2) {
   margin-bottom: 20px;
+}
+
+.site-navigation__main-link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -116,6 +228,7 @@
   .site-navigation__toggle {
     width: 64px;
     height: 45px;
+    transition: background-color 0.3s;
 
     &::before {
       width: 64px;
@@ -123,7 +236,16 @@
 
       box-shadow: 0 20px 0 0 #ffffff,
         0 40px 0 0 #ffffff;
+      transition: box-shadow 0.2s, background-color 0.3s;
     }
+  }
+
+  .site-navigation__toggle:hover .site-navigation__toggle-arrow::after,
+  .site-navigation__toggle:hover .site-navigation__toggle-arrow::before {
+    width: 16px;
+    height: 5px;
+
+    left: -3px;
   }
 
   .site-navigation__toggle--open {
@@ -146,6 +268,7 @@
 
     &::before {
       transform: rotate(45deg);
+      transition: none;
     }
 
     &::after {
@@ -153,11 +276,24 @@
     }
   }
 
+  .site-navigation__toggle--open:hover::before {
+    top: 21px;
+  }
+
   .site-navigation__link {
     font-size: 35px;
-    letter-spacing: 3.4px;
+    letter-spacing: 3.5px;
 
     margin-bottom: 57px;
+  }
+
+  .site-navigation__item {
+    width: 380px;
+    margin-bottom: 57px;
+  }
+
+  .site-navigation__item:nth-child(2) {
+    margin-bottom: 56px;
   }
 
   .site-navigation__item:nth-child(5) {
@@ -169,7 +305,7 @@
   .site-navigation__main-link {
     order: 1;
 
-    margin-left: 150px;
+    margin-left: 142px;
   }
 
   .site-navigation__link {
@@ -187,26 +323,30 @@
 
     padding: 0;
     padding-top: 126px;
-    padding-bottom: 112px;
+    padding-bottom: 109px;
   }
 
   .site-navigation__item {
     width: 360px;
     margin: 0 auto;
+    margin-bottom: 18px;
   }
 
+  .site-navigation__item:nth-child(2),
   .site-navigation__item:nth-child(5) {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 
   .site-navigation__toggle {
     order: 0;
 
-    width: 26px;
-    height: 18px;
+    width: 35px;
+    height: 35px;
 
     margin-top: 8px;
     margin-left: 3px;
+
+    transition: transform 0.5s;
 
     &::before {
       width: 26px;
@@ -218,27 +358,61 @@
   }
 
   .site-navigation__toggle--open {
-    order: 0;
+    width: 37px;
+    height: 29px;
 
-    width: 26px;
-    height: 18px;
+    margin: 0;
+    margin-top: 4px;
 
-    margin-top: 8px;
-    margin-left: 3px;
+    padding: 0;
 
-    &::before {
-      width: 26px;
-      height: 2px;
-      top: 0;
+    z-index: 6;
+
+    &::before,
+    &::after {
+      width: 30px;
+      height: 3px;
+      top: 12px;
       left: 0;
 
-      transform: rotate(0deg);
-      box-shadow: 0 8px 0 0 #ffffff,
-        0 16px 0 0 #ffffff;
+      box-shadow: none;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      transition: none;
     }
 
     &::after {
-      content: none;
+      transform: rotate(-45deg);
     }
+  }
+
+  .site-navigation__toggle--open:hover::before {
+    top: 12px;
+  }
+
+  .site-navigation__toggle:hover {
+    transform: rotate(180deg);
+  }
+
+  .site-navigation__toggle--open:hover {
+    transform: none;
+    transition: none;
+  }
+
+  .site-navigation__toggle:hover .site-navigation__toggle-arrow::after,
+  .site-navigation__toggle:hover .site-navigation__toggle-arrow::before {
+    width: 11px;
+    height: 2px;
+    left: -2px;
+  }
+
+  .site-navigation__toggle-arrow::after {
+    top: calc(50% + 2px);
+  }
+
+  .site-navigation__toggle-arrow::before {
+    top: calc(50% - 5px);
   }
 }

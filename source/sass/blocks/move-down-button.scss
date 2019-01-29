@@ -8,7 +8,26 @@
 
   cursor: pointer;
   z-index: 2;
+
+  animation: shadow  0.8s  linear infinite alternate;
+
+  &:hover {
+    animation-play-state: paused;
+  }
 }
+
+.move-down-button:hover .move-down-button__arrow,
+.move-down-button:hover .move-down-button__arrow::after,
+.move-down-button:hover .move-down-button__arrow::before {
+  background-color: #f8a25a;
+}
+
+.move-down-button:active .move-down-button__arrow,
+.move-down-button:active .move-down-button__arrow::after,
+.move-down-button:active .move-down-button__arrow::before {
+  opacity: 0.6;
+}
+
 
 .move-down-button__arrow {
   position: relative;
@@ -39,6 +58,28 @@
   &::after {
     transform: rotate(-135deg);
     left: -5px;
+  }
+}
+
+@keyframes shadow {
+  10% {
+    transform: translateY(2px);
+  }
+
+  25% {
+    transform: translateY(4px);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+
+  75% {
+    transform: translateY(8px);
+  }
+
+  to {
+    transform: translateY(10px);
   }
 }
 

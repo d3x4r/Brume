@@ -14,6 +14,10 @@
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header">
     <div class="page-header__container">
 
@@ -26,26 +30,40 @@
               <img class="page-header__logo" src="img/logo-mobile.png" alt="Логотип">
             </picture>
           </a>
-          <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
+          <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню">
+            <span class="site-navigation__toggle-arrow"></span>
+          </button>
           <span class="phone-number">+7 (800) 823 48 88</span>
         </div>
         <ul class="site-navigation__list">
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Главная</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link site-navigation__link--active" href="#">Преимущества</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Портфолио</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Наши услуги</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Отзывы</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link">Главная</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#advantage">Преимущества</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#portfolio">Портфолио</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#service">Наши услуги</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#contact">Контакты</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#comment">Отзывы</a></li>
           <li>
             <ul class="social-list social-list--site-navigation">
               <li class="social-list__vk">
-                <a class="social-list__link" href="#" aria-label="Ссылка на страницу vkontakte"></a>
+                <a class="social-list__link" href="#" aria-label="Ссылка на страницу vkontakte">
+                  <svg class="social-list__svg social-list__svg--vk">
+                    <use xlink:href="#vk-icon"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social-list__instagram">
-                <a class="social-list__link" href="#" aria-label="Ссылка на страницу instagram"></a>
+                <a class="social-list__link" href="#" aria-label="Ссылка на страницу instagram">
+                  <svg class="social-list__svg social-list__svg--instagram">
+                    <use xlink:href="#instagram-icon"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social-list__fb">
-                <a class="social-list__link" href="#" aria-label="Ссылка на страницу facebook"></a>
+                <a class="social-list__link" href="#" aria-label="Ссылка на страницу facebook">
+                  <svg class="social-list__svg social-list__svg--fb">
+                    <use xlink:href="#fb-icon"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -56,18 +74,30 @@
         <p class="company-preview__text">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
         <a class="company-preview__button">Заказать дизайн</a>
       </section>
-      <a class="move-down-button" href="#" aria-label="Переместиться ниже по странице">
+      <a class="move-down-button" href="#advantage" aria-label="Переместиться ниже по странице">
         <span class="move-down-button__arrow"></span>
       </a>
       <ul class="social-list social-list--header-desktop">
         <li class="social-list__item social-list__item--vk">
-          <a class="social-list__link" href="#" aria-label="Ссылка на страницу vkontakte"></a>
+          <a class="social-list__link" href="#" aria-label="Ссылка на страницу vkontakte">
+            <svg class="social-list__svg social-list__svg--vk">
+              <use xlink:href="#vk-icon"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item social-list__item--instagram">
-          <a class="social-list__link" href="#" aria-label="Ссылка на страницу instagram"></a>
+          <a class="social-list__link" href="#" aria-label="Ссылка на страницу instagram">
+            <svg class="social-list__svg social-list__svg--instagram">
+              <use xlink:href="#instagram-icon"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item social-list__item--fb">
-          <a class="social-list__link" href="#" aria-label="Ссылка на страницу facebook"></a>
+          <a class="social-list__link" href="#" aria-label="Ссылка на страницу facebook">
+            <svg class="social-list__svg social-list__svg--fb">
+              <use xlink:href="#fb-icon"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <section class="preview-slider">
@@ -88,39 +118,43 @@
   </header>
 
   <main>
-    <section class="advantage">
+    <section class="advantage" id="advantage">
       <h2 class="visually-hidden">Преимущества </h2>
       <ul class="advantage__list">
         <li class="advantage__item">
           <span class="advantage__number">01</span>
           <h3 class="advantage__title list-title">Берем весь ремонт на&nbsp;себя</h3>
-          <p class="advantage__text list-text">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться
+          <p class="advantage__text list-text">Заботы по дизайну и отделке помещения возьмем на себя, останется
+            дождаться
             завершения работ и наслаждаться результатом</p>
         </li>
         <li class="advantage__item">
           <span class="advantage__number">02</span>
           <h3 class="advantage__title list-title">Мы - профессионалы своего дела</h3>
-          <p class="advantage__text list-text">Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и тренинги а&nbsp;студия
+          <p class="advantage__text list-text">Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и
+            тренинги а&nbsp;студия
             уже реализовала свыше 1000 дизайн-проектов</p>
         </li>
         <li class="advantage__item">
           <span class="advantage__number">03</span>
           <h3 class="advantage__title list-title">Наши проекты
             индивидуальны</h3>
-          <p class="advantage__text list-text">Каждый, созданный студией, интерьер - индивидуальное и максимально продуманное
+          <p class="advantage__text list-text">Каждый, созданный студией, интерьер - индивидуальное и максимально
+            продуманное
             решение для каждого вида помещения</p>
         </li>
         <li class="advantage__item advantage__item--last-item">
           <span class="advantage__number">04</span>
           <h3 class="advantage__title list-title">Работаем на выгодных
             условиях</h3>
-          <p class="advantage__text list-text">Ценовая политика студии очень лояльна, мы осуществляем контроль всего процесса
+          <p class="advantage__text list-text">Ценовая политика студии очень лояльна, мы осуществляем контроль всего
+            процесса
             работы и получаем результат который делает клиентов счастивыми</p>
         </li>
       </ul>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2 class="portfolio__title section-title">Портфолио</h2>
       <div class="portfolio__filter-buttons">
         <button class="portfolio__button portfolio__button--active" type="button">Все проекты</button>
@@ -128,13 +162,14 @@
         <button class="portfolio__button" type="button">Отделочные работы</button>
       </div>
       <div class="portfolio-slider">
-         <div class="portfolio-slider__container">
+        <div class="portfolio-slider__container">
           <div class="portfolio-slide  portfolio-slide--canteen">
             <h4 class="portfolio-slide__title">Дизайн столовой в&nbsp;стиле «Бохо»</h4>
             <div class="portfolio-slide__image-container">
               <picture>
                 <source type="image/webp" srcset="img/portfolio-canteen-photo.webp">
-                <img class="portfolio-slide__image portfolio-slide__image--canteen" src="img/portfolio-canteen-photo.jpg" alt="Дизайн столовой в стиле «Бохо»">
+                <img class="portfolio-slide__image portfolio-slide__image--canteen" src="img/portfolio-canteen-photo.jpg"
+                  alt="Дизайн столовой в стиле «Бохо»">
               </picture>
             </div>
             <span class="portfolio-slide__type">Дизайн интерьера</span>
@@ -142,7 +177,8 @@
           <div class="portfolio-slide portfolio-slide--active portfolio-slide--living-room-1">
             <h4 class="portfolio-slide__title">Дизайн интерьера гостиной</h4>
             <div class="portfolio-slide__image-container portfolio-slide__image-container">
-              <img class="portfolio-slide__image portfolio-slide__image--living-room-1" src="img/portfolio-lounge-wolf-photo-desktop.jpg" alt="Дизайн интерьера гостиной">
+              <img class="portfolio-slide__image portfolio-slide__image--living-room-1" src="img/portfolio-lounge-wolf-photo-desktop.jpg"
+                alt="Дизайн интерьера гостиной">
             </div>
             <span class="portfolio-slide__type">Дизайн интерьера</span>
             <a class="portfolio-slide__link" href="#" aria-label="Ссылка на проект"></a>
@@ -152,7 +188,8 @@
             <div class="portfolio-slide__image-container">
               <picture>
                 <source type="image/webp" srcset="img/portfolio-lounge-photo.webp">
-                <img class="portfolio-slide__image portfolio-slide__image--living-room-2" src="img/portfolio-lounge-photo.jpg" alt="Дизайн интерьера гостиной">
+                <img class="portfolio-slide__image portfolio-slide__image--living-room-2" src="img/portfolio-lounge-photo.jpg"
+                  alt="Дизайн интерьера гостиной">
               </picture>
             </div>
             <span class="portfolio-slide__type">Дизайн интерьера</span>
@@ -163,7 +200,8 @@
             <div class="portfolio-slide__image-container">
               <picture>
                 <source type="image/webp" srcset="img/portfolio-loft-photo.webp">
-                <img class="portfolio-slide__image portfolio-slide__image--hotel" src="img/portfolio-loft-photo.jpg" alt="Лофт интерьер
+                <img class="portfolio-slide__image portfolio-slide__image--hotel" src="img/portfolio-loft-photo.jpg"
+                  alt="Лофт интерьер
                   для отеля Hiloft">
               </picture>
             </div>
@@ -177,7 +215,7 @@
       </div>
     </section>
 
-    <section class="service">
+    <section class="service" id="service">
       <h2 class="service-title section-title">Наши услуги</h2>
       <div class="service-slider">
         <ul class="service-slider__switch-buttons">
@@ -201,7 +239,8 @@
             </picture>
           </div>
           <h3 class="service-slider__title service-slide-commercial__title">Дизайн коммерческих обьектов</h3>
-          <p class="service-slider__text service-slide-commercial__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает
+          <p class="service-slider__text service-slide-commercial__text">Работая с коммерческими объектами, студия
+            изучает целевую аудиторию, создает
             коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова
             и снова</p>
           <span class="service-slider__project-count service-slide-commercial__project-count">532 проекта</span>
@@ -226,42 +265,48 @@
         <li class="stages-item">
           <span class="stages-item__number">1</span>
           <h3 class="stages-item__title list-title">Консультация</h3>
-          <p class="stages-item__text list-text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем
+          <p class="stages-item__text list-text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера,
+            оговариваем
             сроки реализации.</p>
         </li>
         <li class="stages-item">
           <span class="stages-item__number">2</span>
           <h3 class="stages-item__title list-title">Техническое задание</h3>
-          <p class="stages-item__text list-text">Составляем техническое задание. Заключаем договор, в котором прописываем все
+          <p class="stages-item__text list-text">Составляем техническое задание. Заключаем договор, в котором
+            прописываем все
             этапы проекта.</p>
         </li>
         <li class="stages-item stages-item--plan">
           <span class="stages-item__number">3</span>
           <h3 class="stages-item__title list-title">Замеры и планировка</h3>
-          <p class="stages-item__text list-text">Фиксируем размеры стен, окон, плинтусов, дверных проемов для эффективной работы</p>
+          <p class="stages-item__text list-text">Фиксируем размеры стен, окон, плинтусов, дверных проемов для
+            эффективной работы</p>
         </li>
         <li class="stages-item  stages-item--design">
           <span class="stages-item__number">4</span>
           <h3 class="stages-item__title list-title">Дизайн-концепция</h3>
-          <p class="stages-item__text list-text">Создаем концепцию на основе пожеланий клиента, его образов и ощущений, подбираем
+          <p class="stages-item__text list-text">Создаем концепцию на основе пожеланий клиента, его образов и ощущений,
+            подбираем
             мебель.</p>
         </li>
         <li class="stages-item stages-item--3d">
           <span class="stages-item__number">5</span>
           <h3 class="stages-item__title stages-item__title--less-title list-title">3D Визуализация</h3>
-          <p class="stages-item__text list-text">Создаем 3D визуализацию, собираем пакет чертежей соответствующий строительным
+          <p class="stages-item__text list-text">Создаем 3D визуализацию, собираем пакет чертежей соответствующий
+            строительным
             нормам.</p>
         </li>
         <li class="stages-item stages-item--interior">
           <span class="stages-item__number">6</span>
           <h3 class="stages-item__title stages-item__title--less-title list-title">Комплектация интерьера</h3>
-          <p class="stages-item__text list-text">Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем
+          <p class="stages-item__text list-text">Подбираем мебель, отделочные материалы, светильники и текстиль.
+            Декорируем
             интерьер.</p>
         </li>
       </ul>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact__wrapper">
         <h2 class="contact__title" aria-hidden="true">Мечтаете<span class="break-new-line-for-pp"></span> об
           интерьере
@@ -287,7 +332,7 @@
       </div>
     </section>
 
-    <section class="comment">
+    <section class="comment" id="comment">
       <h2 class="comment__title section-title">Отзывы наших клиентов</h2>
       <div class="comment-slider">
         <div class="comment-slider__wrapper">
@@ -297,16 +342,18 @@
               <img class="comment-slide__image" src="img/comment-user-1.jpg" width="201" height="192" alt="Автор отзыва">
             </picture>
             <div class="comment-slide__text-wrapper">
-              <h4 class="comment-slide__author">Автор отзыва</h4>
+              <h4 class="comment-slide__author">Алексей</h4>
               <span class="comment-slide__service-title">Услуга: инерьер детской</span>
-              <p class="comment-slide__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet adipisci, voluptate ducimus praesentium hic repellat et maxime! Non soluta molestiae, corrupti temporibus tempora deserunt iste iusto cumque itaque, quaerat consequuntur.</p>
+              <p class="comment-slide__text">Прекрасная, восхитительная работы всей команды! Выполнили все наши
+                непростые запросы: из 3-х комнатной - 4х комнатную, вписаться в заданный бюджет, чтобы было просторно и
+                функционально! </p>
             </div>
           </article>
           <article class="comment-slide comment-slide--active">
             <picture class="comment-slide__image-container">
-              <source type="image/webp" srcset="img/comment-user-2.webp">
               <source type="image/webp" media="(min-width: 1170px)" srcset="img/comment-user-2.webp">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/comment-user-2-tablet.webp">
+              <source type="image/webp" srcset="img/comment-user-2.webp">
 
               <source media="(min-width: 1170px)" srcset="img/comment-user-2.jpg">
               <source media="(min-width: 768px)" srcset="img/comment-user-2-tablet.jpg">
@@ -328,7 +375,9 @@
             <div class="comment-slide__text-wrapper">
               <h4 class="comment-slide__author">Автор отзыв</h4>
               <span class="comment-slide__service-title">Услуга: инерьер детской</span>
-              <p class="comment-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, consectetur. Repellat nihil sit maiores modi, mollitia obcaecati, aut dolor voluptatibus quidem corporis, et numquam atque incidunt asperiores! Corrupti, sapiente magnam.</p>
+              <p class="comment-slide__text">Студию дизайна нашла по интернету и не ошиблась. Осталась очень довольна
+                результатом. Профессионалы своего дела, грамотно составлен дизайн проект, тактичные собеседники, умеют
+                выслушать пожелания клиента, пунктуальные - все встречи состоялись в срок</p>
             </div>
           </article>
         </div>

@@ -52,6 +52,10 @@
 
     border-color: transparent;
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -89,9 +93,9 @@
   .company-preview {
     width: 487px;
 
-    margin-top: 200px;
+    margin-top: 191px;
     margin-left: 93px;
-    margin-bottom: 191px;
+    margin-bottom: 182px;
 
     text-align: left;
   }
