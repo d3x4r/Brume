@@ -98,6 +98,16 @@
   letter-spacing: 2.8px;
 
   cursor: pointer;
+
+  &:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: #f8a25a;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .contact-form__terms-agree-text {
@@ -118,6 +128,14 @@
 
 .contact-form__item {
   margin-bottom: 55px;
+}
+
+.contact-form__input:required {
+  box-shadow: none;
+}
+
+.contact-form__input:focus {
+  border-color: #f8a25a;
 }
 
 @media (min-width: $tablet-width) {

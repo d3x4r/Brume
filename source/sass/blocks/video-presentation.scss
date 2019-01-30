@@ -14,6 +14,12 @@
     height: 100%;
     background-color: rgba(24, 44, 61, 0.7);
     z-index: 1;
+
+    transition: background-color 0.5s;
+  }
+
+  &:hover::before {
+    background-color: rgba(24, 44, 61, 0.6);
   }
 }
 
@@ -61,11 +67,13 @@
   top: 36.4%;
   left: calc(50% - 43px);
 
-  background-color: rgba(254, 188, 128, 0.95);
+  background-color: rgba(254, 188, 128, 0.85);
   box-shadow: 4.5px 7.794px 20.88px 8.12px rgba(0, 1, 6, 0.07);
 
   border-radius: 50%;
   z-index: 2;
+
+  transition: transform 0.4s;
 
   &::before {
     position: absolute;
@@ -78,6 +86,16 @@
     left: calc(50% - 6px);
 
     background-image: url("../img/video-play-button.svg");
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: rgba(254, 188, 128, 1);
+    box-shadow: 0 0 0 2px #ffffff;
+  }
+
+  &:active {
+    background-color: rgba(254, 188, 128, 0.7);
   }
 }
 

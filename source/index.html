@@ -316,13 +316,13 @@
         <form class="contact-form" action="#" method="POST">
           <ul class="contact-form__list">
             <li class="contact-form__item contact-form__item--name">
-              <input class="contact-form__input" type="text" id="name" placeholder="Имя*">
+              <input class="contact-form__input" type="text" id="name" placeholder="Имя*" maxlength="20" required>
             </li>
             <li class="contact-form__item contact-form__item--phone">
-              <input class="contact-form__input" type="tel" id="phone" placeholder="Телефон*">
+              <input class="contact-form__input" type="tel" id="phone" placeholder="Телефон*" required>
             </li>
             <li class="contact-form__item contact-form__item--email">
-              <input class="contact-form__input" type="email" id="email" placeholder="E-mail*">
+              <input class="contact-form__input" type="email" id="email" placeholder="E-mail*" maxlength="23">
             </li>
           </ul>
           <button class="contact-form__button" type="submit">Отправить</button>
@@ -377,7 +377,7 @@
               <span class="comment-slide__service-title">Услуга: инерьер детской</span>
               <p class="comment-slide__text">Студию дизайна нашла по интернету и не ошиблась. Осталась очень довольна
                 результатом. Профессионалы своего дела, грамотно составлен дизайн проект, тактичные собеседники, умеют
-                выслушать пожелания клиента, пунктуальные - все встречи состоялись в срок</p>
+                выслушать пожелания клиента.</p>
             </div>
           </article>
         </div>
@@ -393,8 +393,10 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="img/footer-logo.png" alt="Логотип">
-      <ul class="footer-social">
+      <a class="page-footer__link" href="#">
+        <img class="page-footer__logo" src="img/footer-logo.png" alt="Логотип">
+      </a>
+      <!-- <ul class="footer-social">
         <li class="footer-social__item footer-social__item--vk">
           <a class="footer-social__link" href="#" aria-label="Ссылка на страницу vkontakte"></a>
         </li>
@@ -404,9 +406,32 @@
         <li class="footer-social__item footer-social__item--facebook">
           <a class="footer-social__link" href="#" aria-label="Ссылка на страницу facebook"></a>
         </li>
+      </ul> -->
+      <ul class="footer-social">
+        <li class="footer-social__item footer-social__item--vk">
+          <a class="footer-social__link" href="#" aria-label="Ссылка на страницу vkontakte">
+            <svg class="social-list__footer-svg social-list__footer-svg--vk">
+              <use xlink:href="#vk-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social__item  footer-social__item--instagram">
+          <a class="footer-social__link" href="#" aria-label="Ссылка на страницу instagram">
+            <svg class="social-list__footer-svg social-list__footer-svg--instagram">
+              <use xlink:href="#instagram-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social__item footer-social__item--facebook">
+          <a class="footer-social__link" href="#" aria-label="Ссылка на страницу facebook">
+            <svg class="social-list__footer-svg social-list__footer-svg--fb">
+              <use xlink:href="#fb-icon"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
     </div>
-    <p class="footer-text footer-text--copyright">BRUME interior, 2017</p>
+    <p class="footer-text footer-text--copyright">BRUME interior, 2019</p>
     <p class="footer-text footer-text--developers">HolodnayaDesign</p>
   </footer>
   <script src="js/script.js"></script>
