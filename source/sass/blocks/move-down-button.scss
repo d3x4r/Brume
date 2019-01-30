@@ -40,6 +40,8 @@
 
   background-color: rgb(165, 173, 179);
   border: none;
+  pointer-events: none;
+
 
   &::before,
   &::after {
