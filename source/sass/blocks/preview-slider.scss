@@ -9,6 +9,9 @@
     top: 63px;
     margin-left: auto;
     margin-right: auto;
+    width: 1163px;
+    min-height: 595px;
+    z-index: -1;
   }
 
   .preview-slider__image {
@@ -22,5 +25,20 @@
 
   .preview-slider__controls {
     display: flex;
+  }
+
+  .preview-slider__wrapper {
+    height: 595px;
+    overflow: hidden;
+  }
+
+  .preview-slider__slide {
+    display: none;
+    top: 0;
+    left: 0;
+
+    &--active {
+      display: block;
+    }
   }
 }

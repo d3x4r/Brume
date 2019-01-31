@@ -101,11 +101,31 @@
         </li>
       </ul>
       <section class="preview-slider">
-        <div class="preview-slider__slide">
-          <picture>
-            <source type="image/webp" srcset="img/preview-slider-slide-1.webp">
-            <img class="preview-slider__image" src="img/preview-slider-slide-1.jpg" width="1163" height="595" alt="Первый слайд">
-          </picture>
+        <div class="preview-slider__wrapper">
+          <div class="preview-slider__slide preview-slider__slide--active">
+            <picture>
+              <source type="image/webp" srcset="img/preview-slider-slide-1.webp">
+              <img class="preview-slider__image" src="img/preview-slider-slide-1.jpg" width="1163" height="595" alt="Первый слайд">
+            </picture>
+          </div>
+          <div class="preview-slider__slide">
+            <picture>
+              <source type="image/webp" srcset="img/preview-slider-slide-2.webp">
+              <img class="preview-slider__image" src="img/preview-slider-slide-2.jpg" width="1163" height="595" alt="Второй слайд">
+            </picture>
+          </div>
+          <div class="preview-slider__slide">
+            <picture>
+              <source type="image/webp" srcset="img/preview-slider-slide-3.webp">
+              <img class="preview-slider__image" src="img/preview-slider-slide-3.jpg" width="1163" height="595" alt="Третий слайд">
+            </picture>
+          </div>
+          <div class="preview-slider__slide">
+            <picture>
+              <source type="image/webp" srcset="img/preview-slider-slide-4.webp">
+              <img class="preview-slider__image" src="img/preview-slider-slide-4.jpg" width="1163" height="595" alt="Четвертый слайд">
+            </picture>
+          </div>
         </div>
         <div class="preview-slider__controls slider-controls">
           <button class="slider-controls__button slider-controls__button--active" type="button" aria-label="Переключить слайд"></button>
@@ -425,6 +445,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/header-slider.js"></script>
   <!-- <script src="js/script.js"></script> -->
 </body>
 

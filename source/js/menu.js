@@ -1,5 +1,5 @@
 'use strict';
-
+(function () {
 const ESC_KEYCODE = 27;
 const MAX_RESIZE_WIDTH = 1170;
 
@@ -39,3 +39,4 @@ menuButton.on('click', () => {
 })
 
 addScrollArrow();
+})();
