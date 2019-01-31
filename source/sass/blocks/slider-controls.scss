@@ -1,30 +1,42 @@
 
 .slider-controls {
   display: none;
-  justify-content: space-between;
-
   width: 140px;
-  height: 3px;
 
-  margin-top: 40px;
   margin-left: auto;
 }
 
-.slider-controls__button {
+.slider-controls__item {
+  display: block;
   width: 25px;
   height: 3px;
 
-  margin: 0;
-  padding: 0;
-  border: none;
-
   background-color: #cdd3cf;
-
 
   cursor: pointer;
 
   &--active {
     background-color: #1a444a;
   }
+
+  .slider-controls__button {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
 }
 
+@media (min-width: $desktop-width) {
+  .slider-controls {
+    display: block;
+  }
+
+  .slider-controls__list {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

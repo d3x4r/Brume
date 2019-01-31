@@ -67,7 +67,9 @@
     margin: 0 auto;
     margin-bottom: 98px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
+    // padding-bottom: 20px;
+
 
     background: linear-gradient(to right, rgba(17, 37, 55, 0.88) 50%, rgba(0, 0, 0, 0) 50%);
 
@@ -80,6 +82,7 @@
     position: relative;
     width: 1163px;
     margin-left: auto;
+    padding-bottom: 6px;
   }
 
   .page-header__logo {
