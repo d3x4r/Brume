@@ -7,8 +7,10 @@ let firstSlideIndex = 0;
 const slideCount = 3;
 
 const makeNextSlideActive = (currentElem, nextElem) => {
-  currentElem.removeClass('preview-slider__slide--active');
-  nextElem.addClass('preview-slider__slide--active').css('opacity', '0').animate({opacity: 1,}, 2500);
+  currentElem.css('opacity', '1').animate({opacity: 0,}, 1000, () => {
+    currentElem.removeClass('preview-slider__slide--active');
+    nextElem.addClass('preview-slider__slide--active').css('opacity', '0').animate({opacity: 1,}, 1500);
+  });
 };
 
 const switchNextSlide = () => {
@@ -33,5 +35,5 @@ const switchPreviousSlide = () => {
   makeNextSlideActive(activeSlide, prevSlide);
 };
 
-const timer = setInterval(switchNextSlide, 5000);
+const timer = setInterval(switchNextSlide, 6000);
 })();
