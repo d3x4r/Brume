@@ -6,13 +6,25 @@
   overflow: hidden;
 }
 
-.portfolio-slider__container {
-  position: absolute;
-  display: flex;
+// .portfolio-slider__container {
+//   position: absolute;
+//   display: flex;
 
-  top: 0;
-  width: 100%;
-  left: -78vw;
+//   top: 0;
+//   width: 100%;
+//   left: -78vw;
+// }
+
+.portfolio-slider__container {
+  // position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+
+  // top: 0;
+  // left: 0;
+
+  overflow: hidden;
 }
 
 .portfolio-slider__buttons {
