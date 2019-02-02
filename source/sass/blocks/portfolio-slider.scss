@@ -36,6 +36,7 @@
 
   .portfolio-slider__container {
     left: 0;
+    margin-left: 0;
   }
 
   .portfolio-slider__buttons {
@@ -70,6 +71,10 @@
       background-repeat: no-repeat;
 
       right: 31px;
+    }
+
+    &:hover {
+      transform: scale(1.3);
     }
   }
 }

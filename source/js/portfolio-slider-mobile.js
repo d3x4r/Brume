@@ -1,5 +1,5 @@
 'use strict';
-
+(function () {
 const MAX_RESIZE_WIDTH = 1170;
 const TABLET_RESIZE_WIDTH = 768;
 
@@ -9,7 +9,7 @@ let slideStep = 87;
 
 let slideCount = $('.portfolio-slide').length;
 
-if ($('html').prop('clientWidth') >= TABLET_RESIZE_WIDTH) {
+if ($('html').prop('clientWidth') >= TABLET_RESIZE_WIDTH && $('html').prop('clientWidth') < MAX_RESIZE_WIDTH) {
   slidePosition = 84;
   slideStep = 84;
 }
@@ -23,7 +23,7 @@ const doSlideActive = (slide) => {
   slide.addClass('portfolio-slide--active');
 };
 
-const swipeToLeft = (evt) => {
+const slideToLeft = (evt) => {
   const currentSlide = $(evt.target);
   const currentSlideIndex = currentSlide.index('.portfolio-slide')
 
@@ -41,7 +41,7 @@ const swipeToLeft = (evt) => {
   });
 };
 
-const swipeToRight = (evt) => {
+const slideToRight = (evt) => {
   const currentSlide = $(evt.target);
   const currentSlideIndex = currentSlide.index('.portfolio-slide')
 
@@ -75,8 +75,8 @@ $(window).on('resize', function(){
 
 const portfolioSlider = $('.portfolio-slider__container');
 
-portfolioSlider.on('swipeleft', '.portfolio-slide', swipeToLeft);
-portfolioSlider.on('swiperight', '.portfolio-slide', swipeToRight);
+portfolioSlider.on('swipeleft', '.portfolio-slide', slideToLeft);
+portfolioSlider.on('swiperight', '.portfolio-slide', slideToRight);
 
 
 
@@ -87,22 +87,35 @@ const filterButtons = $('.portfolio__filter-button');
 
 filterButtonsContainer.on('click', '.portfolio__filter-button', function() {
   filterButtons.removeClass('portfolio__filter-button--active');
-  $(this).addClass('portfolio__filter-button--active');
 
   slides = $('.portfolio-slide');
   const filterType = $(this).attr('data-type');
   const filteredSlides = (filterType === 'all') ? allSlides : allSlides.filter(`[data-type="${filterType}"]`);
-
+  $(this).addClass('portfolio__filter-button--active');
   slides.remove();
   portfolioSlider.prepend(filteredSlides);
 
-  doSlideActive($('.portfolio-slide:eq(1)'));
+
+  if ($('html').prop('clientWidth') < MAX_RESIZE_WIDTH) {
+    doSlideActive($('.portfolio-slide:eq(1)'));
+  }
+
   slideCount = $('.portfolio-slide').length;
 
   slides = $('.portfolio-slide');
   slidePosition = slideStep;
+  if ($('html').prop('clientWidth') >= MAX_RESIZE_WIDTH) {
+    slideStep = 0;
+    slides.removeClass('portfolio-slide--active');
+  }
   slides.css({
     'transform': `translateX(-${slideStep}vw)`,
   });
 });
 
+if ($('html').prop('clientWidth') >= MAX_RESIZE_WIDTH) {
+  portfolioSlider.off('swipeleft', '.portfolio-slide', slideToLeft);
+  portfolioSlider.off('swiperight', '.portfolio-slide', slideToRight);
+  slides.removeClass('portfolio-slide--active');
+}
+})();
