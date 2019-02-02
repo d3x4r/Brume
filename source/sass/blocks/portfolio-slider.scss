@@ -6,25 +6,17 @@
   overflow: hidden;
 }
 
-// .portfolio-slider__container {
-//   position: absolute;
-//   display: flex;
-
-//   top: 0;
-//   width: 100%;
-//   left: -78vw;
-// }
-
 .portfolio-slider__container {
-  // position: absolute;
   display: flex;
   flex-wrap: nowrap;
   width: auto;
 
-  // top: 0;
-  // left: 0;
-
   overflow: hidden;
+  touch-action: none;
+}
+
+.portfolio-slider__container > :first-child {
+  margin-left: 9vw;
 }
 
 .portfolio-slider__buttons {
@@ -34,10 +26,6 @@
 @media (min-width: $tablet-width) {
   .portfolio-slider {
     height: 700px;
-  }
-
-  .portfolio-slider__container {
-    left: -73vw;
   }
 }
 

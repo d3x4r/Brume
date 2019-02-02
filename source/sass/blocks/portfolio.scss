@@ -15,7 +15,7 @@
   margin-bottom: 14px;
 }
 
-.portfolio__button {
+.portfolio__filter-button {
   margin-bottom: 27px;
   padding: 0;
 
@@ -52,16 +52,16 @@
     display: flex;
     flex-wrap: wrap;
 
-    width: 694px;
+    width: 711px;
     margin: 0 auto 23px;
   }
 
-  .portfolio__button {
-    width: 208px;
+  .portfolio__filter-button {
+    width: 214px;
     text-align: left;
   }
 
-  .portfolio__button:nth-child(3n + 2) {
+  .portfolio__filter-button:nth-child(3n + 2) {
     margin-right: 69px;
   }
 }
@@ -88,7 +88,7 @@
     margin-bottom: 20px;
   }
 
-  .portfolio__button {
+  .portfolio__filter-button {
     width: auto;
     max-width: 200px;
 
@@ -102,7 +102,7 @@
     }
   }
 
-  .portfolio__button:nth-child(3n + 2) {
+  .portfolio__filter-button:nth-child(3n + 2) {
     margin-right: 60px;
   }
 }

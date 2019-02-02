@@ -248,13 +248,13 @@
     <section class="portfolio" id="portfolio">
       <h2 class="portfolio__title section-title">Портфолио</h2>
       <div class="portfolio__filter-buttons">
-        <button class="portfolio__button portfolio__button--active" type="button">Все проекты</button>
-        <button class="portfolio__button" type="button">Дизайн интерьеров</button>
-        <button class="portfolio__button" type="button">Отделочные работы</button>
+        <button class="portfolio__filter-button portfolio__filter-button--active" type="button" data-type="all">Все проекты</button>
+        <button class="portfolio__filter-button" type="button" data-type="design">Дизайн интерьеров</button>
+        <button class="portfolio__filter-button" type="button" data-type="work">Отделочные работы</button>
       </div>
       <div class="portfolio-slider">
         <div class="portfolio-slider__container">
-          <div class="portfolio-slide portfolio-slide--firstSlide  portfolio-slide--canteen">
+          <div class="portfolio-slide portfolio-slide--canteen" data-type="design">
             <h4 class="portfolio-slide__title">Дизайн столовой в&nbsp;стиле «Бохо»</h4>
             <div class="portfolio-slide__image-container">
               <picture>
@@ -265,7 +265,7 @@
             </div>
             <span class="portfolio-slide__type">Дизайн интерьера</span>
           </div>
-          <div class="portfolio-slide portfolio-slide--active portfolio-slide--living-room-1">
+          <div class="portfolio-slide portfolio-slide--active portfolio-slide--living-room-1" data-type="design">
             <h4 class="portfolio-slide__title">Дизайн интерьера гостиной</h4>
             <div class="portfolio-slide__image-container portfolio-slide__image-container">
               <img class="portfolio-slide__image portfolio-slide__image--living-room-1" src="img/portfolio-lounge-wolf-photo-desktop.jpg"
@@ -274,7 +274,7 @@
             <span class="portfolio-slide__type">Дизайн интерьера</span>
             <a class="portfolio-slide__link" href="#" aria-label="Ссылка на проект"></a>
           </div>
-          <div class="portfolio-slide portfolio-slide--living-room-2">
+          <div class="portfolio-slide portfolio-slide--living-room-2" data-type="design">
             <h4 class="portfolio-slide__title">Дизайн интерьера гостиной</h4>
             <div class="portfolio-slide__image-container">
               <picture>
@@ -285,7 +285,7 @@
             </div>
             <span class="portfolio-slide__type">Дизайн интерьера</span>
           </div>
-          <div class="portfolio-slide portfolio-slide--hotel">
+          <div class="portfolio-slide portfolio-slide--hotel" data-type="work">
             <h4 class="portfolio-slide__title">Лофт интерьер
               для отеля Hiloft</h4>
             <div class="portfolio-slide__image-container">
@@ -298,29 +298,26 @@
             </div>
             <span class="portfolio-slide__type">Дизайн интерьера</span>
           </div>
-          <div class="portfolio-slide test1">
-            <h4 class="portfolio-slide__title">Test1</h4>
+          <div class="portfolio-slide" data-type="work">
+            <h4 class="portfolio-slide__title">Дизайн мансарды загородного дома</h4>
             <div class="portfolio-slide__image-container">
               <picture>
-                <source type="image/webp" srcset="img/portfolio-loft-photo.webp">
-                <img class="portfolio-slide__image portfolio-slide__image--hotel" src="img/portfolio-loft-photo.jpg"
-                  alt="Лофт интерьер
-                  для отеля Hiloft">
+                <source type="image/webp" srcset="img/portfolio-attic.webp">
+                <img class="portfolio-slide__image portfolio-slide__image--hotel" src="img/portfolio-attic.jpg" alt="Дизайн мансарды загородного дома">
               </picture>
+
             </div>
-            <span class="portfolio-slide__type">Дизайн интерьера</span>
+            <span class="portfolio-slide__type">Дизайн мансарды загородного дома</span>
           </div>
-          <div class="portfolio-slide test2">
-            <h4 class="portfolio-slide__title">Test2</h4>
+          <div class="portfolio-slide" data-type="work">
+            <h4 class="portfolio-slide__title">Дизайн пентхауса</h4>
             <div class="portfolio-slide__image-container">
               <picture>
-                <source type="image/webp" srcset="img/portfolio-loft-photo.webp">
-                <img class="portfolio-slide__image portfolio-slide__image--hotel" src="img/portfolio-loft-photo.jpg"
-                  alt="Лофт интерьер
-                  для отеля Hiloft">
+                <source type="image/webp" srcset="img/portfolio-penthouse.webp">
+                <img class="portfolio-slide__image portfolio-slide__image--hotel" src="img/portfolio-penthouse.jpg" alt="Дизайн пентхауса">
               </picture>
             </div>
-            <span class="portfolio-slide__type">Дизайн интерьера</span>
+            <span class="portfolio-slide__type">Дизайн пентхауса</span>
           </div>
           <div class="portfolio-slider__buttons">
             <button class="portfolio-slider__button portfolio-slider__button--left" type="button" aria-label="Показать предыдущие слайды"></button>

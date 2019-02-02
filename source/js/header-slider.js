@@ -1,7 +1,7 @@
 'use strict';
 (function () {
 
-  const MAX_RESIZE_WIDTH = 1170;
+const MAX_RESIZE_WIDTH = 1170;
 
 const slider = $('.preview-slider__wrapper');
 
