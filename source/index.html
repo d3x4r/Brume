@@ -131,17 +131,17 @@
       </section>
       <section class="slider-controls">
         <ul class="slider-controls__list slider-controls-header">
-          <li class="slider-controls__item slider-controls__item--active">
+          <li class="slider-controls__item slider-controls__item--header slider-controls__item--active">
             <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
           </li>
           <li class="slider-controls__item">
-            <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
+            <button class="slider-controls__button slider-controls__item--header" type="button" aria-label="Переключить слайд"></button>
           </li>
           <li class="slider-controls__item">
-            <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
+            <button class="slider-controls__button slider-controls__item--header" type="button" aria-label="Переключить слайд"></button>
           </li>
           <li class="slider-controls__item">
-            <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
+            <button class="slider-controls__button slider-controls__item--header" type="button" aria-label="Переключить слайд"></button>
           </li>
         </ul>
       </section>
@@ -439,10 +439,20 @@
           </article>
         </div>
         <div class="comment__slider-controls slider-controls">
-          <button class="slider-controls__button slider-controls__button--active" type="button" aria-label="Переключить слайд"></button>
-          <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
-          <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
-          <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
+          <ul class="slider-controls__list comment__slider-controls__list">
+            <li class="slider-controls__item slider-controls__item--active">
+              <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
+            </li>
+            <li class="slider-controls__item">
+              <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
+            </li>
+            <li class="slider-controls__item">
+              <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
+            </li>
+            <li class="slider-controls__item">
+              <button class="slider-controls__button" type="button" aria-label="Переключить слайд"></button>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -456,21 +466,21 @@
       <ul class="footer-social">
         <li class="footer-social__item footer-social__item--vk">
           <a class="footer-social__link" href="#" aria-label="Ссылка на страницу vkontakte">
-            <svg class="social-list__footer-svg social-list__footer-svg--vk">
+            <svg class="social-list-svg social-list-svg--vk">
               <use xlink:href="#vk-icon"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social__item  footer-social__item--instagram">
           <a class="footer-social__link" href="#" aria-label="Ссылка на страницу instagram">
-            <svg class="social-list__footer-svg social-list__footer-svg--instagram">
+            <svg class="social-list-svg social-list-svg--instagram">
               <use xlink:href="#instagram-icon"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social__item footer-social__item--facebook">
           <a class="footer-social__link" href="#" aria-label="Ссылка на страницу facebook">
-            <svg class="social-list__footer-svg social-list__footer-svg--fb">
+            <svg class="social-list-svg social-list-svg--fb">
               <use xlink:href="#fb-icon"></use>
             </svg>
           </a>
