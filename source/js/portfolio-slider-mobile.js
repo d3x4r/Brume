@@ -4,7 +4,7 @@ const MAX_RESIZE_WIDTH = 1170;
 const TABLET_RESIZE_WIDTH = 768;
 
 let slides = $('.portfolio-slide');
-let slidePosition = 87;
+window.slidePosition = 87;
 let slideStep = 87;
 
 let slideCount = $('.portfolio-slide').length;
@@ -104,10 +104,13 @@ filterButtonsContainer.on('click', '.portfolio__filter-button', function() {
 
   slides = $('.portfolio-slide');
   slidePosition = slideStep;
+
   if ($('html').prop('clientWidth') >= MAX_RESIZE_WIDTH) {
     slideStep = 0;
+    slidePosition = 0;
     slides.removeClass('portfolio-slide--active');
   }
+
   slides.css({
     'transform': `translateX(-${slideStep}vw)`,
   });
