@@ -188,7 +188,8 @@
     <section class="portfolio" id="portfolio">
       <h2 class="portfolio__title section-title">Портфолио</h2>
       <div class="portfolio__filter-buttons">
-        <button class="portfolio__filter-button portfolio__filter-button--active" type="button" data-type="all">Все проекты</button>
+        <button class="portfolio__filter-button portfolio__filter-button--active" type="button" data-type="all">Все
+          проекты</button>
         <button class="portfolio__filter-button" type="button" data-type="design">Дизайн интерьеров</button>
         <button class="portfolio__filter-button" type="button" data-type="work">Отделочные работы</button>
       </div>
@@ -276,32 +277,96 @@
       <h2 class="service-title section-title">Наши услуги</h2>
       <div class="service-slider">
         <ul class="service-slider__switch-buttons">
-          <li class="service-slider__switch-button">Дизайн жилого помещения</li>
-          <li class="service-slider__switch-button">Дизайн отельных комнат</li>
-          <li class="service-slider__switch-button service-slider__switch-button--active">Дизайн коммерческих
-            объектов</li>
-          <li class="service-slider__switch-button">Ремонт под ключ</li>
-          <li class="service-slider__switch-button">Отделочные работы</li>
-          <li class="service-slider__switch-button">Выезд дизайнера на&nbsp;дом</li>
+          <li class="service-slider__switch-button" data-content="dwelling"><a class="service-slider-link">Дизайн жилого помещения</a></li>
+          <li class="service-slider__switch-button" data-content="room"><a class="service-slider-link">Дизайн отельных комнат</a></li>
+          <li class="service-slider__switch-button service-slider__switch-button--commercial  service-slider__switch-button--active" data-content="commercial"><a>Дизайн коммерческих объектов</a></li>
+          <li class="service-slider__switch-button" data-content="repair"><a class="service-slider-link">Ремонт под ключ</a></li>
+          <li class="service-slider__switch-button" data-content="finishing"><a class="service-slider-link">Отделочные работы</a></li>
+          <li class="service-slider__switch-button" data-content="designer"><a class="service-slider-link">Выезд дизайнера на&nbsp;дом</a></li>
         </ul>
-        <div class="service-slider__slide service-slide-commercial">
+        <div class="service-slider__slide" data-content="dwelling">
+          <div class="service-slider__image-container">
+            <picture>
+              <source type="image/webp" srcset="img/service-slide-dwelling.webp">
+
+              <img class="service-slider__image" src="img/service-slide-dwelling.jpg" alt="Дизайн жилого помещения">
+            </picture>
+          </div>
+          <h3 class="service-slider__title service-slide-commercial__title">Дизайн жилого помещения</h3>
+          <p class="service-slider__text">Разработка дизайн-проекта квартиры, таунхауса или дома с последующей реализацией. Системный подход. Проверенные решения. Удобные коммуникации. Высокий профессионализм. Экономия средств при строительстве.</p>
+          <span class="service-slider__project-count">653 проекта</span>
+          <a class="service-slider__button" href="#">Консультация</a>
+        </div>
+        <div class="service-slider__slide" data-content="room">
+          <div class="service-slider__image-container">
+            <picture>
+              <source type="image/webp" srcset="img/service-slide-room.webp">
+
+              <img class="service-slider__image" src="img/service-slide-room.jpg" alt="Дизайн коммерческих
+              объектов">
+            </picture>
+          </div>
+          <h3 class="service-slider__title service-slide-commercial__title">Дизайн отельных комнат</h3>
+          <p class="service-slider__text">Обращение к профессионалам обеспечит рациональное использование площади даже самого маленького помещения и эстетичное оформление интерьера в определенном стиле. Грамотное проектирование и правильный выбор материалов, освещения, мебели, штор, напольных покрытий, отделки для стен поможет избежать многих технических проблем в процессе выполнения комплекса ремонтно-отделочных мероприятий.</p>
+          <span class="service-slider__project-count">532 проекта</span>
+          <a class="service-slider__button" href="#">Консультация</a>
+        </div>
+        <div class="service-slider__slide service-slider__slide--active service-slide-commercial" data-content="commercial">
           <div class="service-slider__image-container service-slide-commercial__image-container">
             <picture>
-              <source type="image/webp" media="(min-width: 1360px)" srcset="img/service-slide-desktop.webp">
               <source type="image/webp" srcset="img/service-slide-tablet.webp">
 
-              <source media="(min-width: 1360px)" srcset="img/service-slide-desktop.jpg">
-              <img class="service-slider__image service-slide-commercial__image" src="img/service-slide-tablet.jpg" alt="Дизайн коммерческих
+              <img class="service-slider__image service-slider__image--commercial" src="img/service-slide-tablet.jpg" alt="Дизайн коммерческих
               объектов">
             </picture>
           </div>
           <h3 class="service-slider__title service-slide-commercial__title">Дизайн коммерческих объектов</h3>
-          <p class="service-slider__text service-slide-commercial__text">Работая с коммерческими объектами, студия
+          <p class="service-slider__text">Работая с коммерческими объектами, студия
             изучает целевую аудиторию, создает
             коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова
             и снова</p>
-          <span class="service-slider__project-count service-slide-commercial__project-count">532 проекта</span>
-          <a class="service-slider__button service-slide-commercial__button" href="#">Консультация</a>
+          <span class="service-slider__project-count">154 проекта</span>
+          <a class="service-slider__button" href="#">Консультация</a>
+        </div>
+        <div class="service-slider__slide" data-content="repair">
+          <div class="service-slider__image-container">
+            <picture>
+              <source type="image/webp" srcset="img/service-slide-repair.webp">
+
+              <img class="service-slider__image" src="img/service-slide-repair.jpg" alt="Ремонт под ключ">
+            </picture>
+          </div>
+          <h3 class="service-slider__title service-slide-commercial__title">Ремонт под ключ</h3>
+          <p class="service-slider__text">Ремонт под ключ подразумевает проведение комплекса работ, начиная от электромонтажа и сантехники и заканчивая финишной отделкой.</p>
+          <span class="service-slider__project-count">36 проекта</span>
+          <a class="service-slider__button" href="#">Консультация</a>
+        </div>
+        <div class="service-slider__slide" data-content="finishing">
+          <div class="service-slider__image-container">
+            <picture>
+              <source type="image/webp" srcset="img/service-slide-finishing.webp">
+
+              <img class="service-slider__image" src="img/service-slide-finishing.jpg" alt="Отделочные работы">
+            </picture>
+          </div>
+          <h3 class="service-slider__title service-slide-commercial__title">Отделочные работы</h3>
+          <p class="service-slider__text">Комплекс услуг, позволяющий эффективно реализовать придуманный нами проект так, чтобы экономить деньги клиента и освободить его время от решения бесчисленного количества крупных и мелких вопросов всегда сопровождающих любой процесс строительства.</p>
+          <span class="service-slider__project-count">52 проекта</span>
+          <a class="service-slider__button" href="#">Консультация</a>
+        </div>
+        <div class="service-slider__slide" data-content="designer">
+          <div class="service-slider__image-container">
+            <picture>
+              <source type="image/webp" srcset="img/service-slide-designer.webp">
+
+              <img class="service-slider__image" src="img/service-slide-designer.jpg" alt="Дизайн коммерческих
+              объектов">
+            </picture>
+          </div>
+          <h3 class="service-slider__title service-slide-commercial__title">Выезд дизайнера на&nbsp;дом</h3>
+          <p class="service-slider__text">При расположении объекта на удаленном расстоянии от города, условия выезда и замеров оговариваются индивидуально</p>
+          <span class="service-slider__project-count">301 проекта</span>
+          <a class="service-slider__button" href="#">Консультация</a>
         </div>
       </div>
     </section>
@@ -496,6 +561,7 @@
   <script src="js/header-slider.js"></script>
   <script src="js/portfolio-slider-mobile.js"></script>
   <script src="js/portfolio-slider-desktop.js"></script>
+  <script src="js/service-tabs.js"></script>
 </body>
 
 </html>

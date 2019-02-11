@@ -18,7 +18,7 @@ if ($('html').prop('clientWidth') >= MAX_RESIZE_WIDTH) {
 
 const slideToRight = () => {
   slides = $('.portfolio-slide');
-
+  slidesCount = slides.length;
   if (slidesCount * slideWidth <= sliderWidth + window.slidePosition) {
     return;
   }
