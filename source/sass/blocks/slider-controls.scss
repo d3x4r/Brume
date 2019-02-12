@@ -15,7 +15,8 @@
 
   cursor: pointer;
 
-  &--active {
+  &--active,
+  &--comment-active {
     background-color: #1a444a;
   }
 

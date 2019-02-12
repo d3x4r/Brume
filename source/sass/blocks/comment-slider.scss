@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.comment__slider-controls {
+.comment-slider__controls {
   display: block;
   margin: 0;
   margin-left: auto;
@@ -21,7 +21,7 @@
   margin-top: 48px;
 }
 
-.comment__slider-controls__list {
+.comment-slider__controls-list {
   padding: 0;
   display: flex;
   width: 140px;
@@ -40,7 +40,7 @@
     margin-left: calc(50% - 350px);
   }
 
-  .comment__slider-controls {
+  .comment-slider__controls {
     margin: 0;
     margin-top: 62px;
     margin-left: calc(50% - 91px);
@@ -66,7 +66,7 @@
     margin: auto;
   }
 
-  .comment__slider-controls {
+  .comment__slider__controls {
     margin: 0 auto;
     margin-top: 78px;
   }
