@@ -10,7 +10,7 @@
   let swipeStep = (windowSize >= DESKTOP_SIZE) ? 112 : 100;
   // Из за pixelperfect и разного поведения слайдера на
   // разных экранах приходится корректировать значения конечной позиции слайдера
-  // в функциях nextSlide и slideChoose
+  // в функциях nextSlide и slideChoose переменной slidesPositionDifference
   const slidesPositionDifference = 112 - 100;
 
   $(window).on('resize', function () {

@@ -79,7 +79,6 @@
 .site-navigation__list {
   position: absolute;
   box-sizing: border-box;
-  // display: none;
   visibility: hidden;
   background-color: #112537;
   width: 100%;
@@ -190,6 +189,7 @@
   box-shadow: none;
 
   background-color: #f8a25a;
+  transition: none;
 }
 
 .site-navigation__toggle:hover .site-navigation__toggle-arrow::before,
@@ -391,7 +391,6 @@
 
     &::before {
       transform: rotate(45deg);
-      transition: none;
     }
 
     &::after {
@@ -400,16 +399,14 @@
   }
 
   .site-navigation__toggle:hover::before {
-    top: calc(50% - 1px);
+    top: calc(50% - 10px);
   }
 
   .site-navigation__toggle--open:hover::before {
     top: 12px;
+    transition: none;
   }
 
-  .site-navigation__toggle:hover {
-    transform: rotate(180deg);
-  }
 
   .site-navigation__toggle--open:hover {
     transform: none;
@@ -420,14 +417,14 @@
   .site-navigation__toggle:hover .site-navigation__toggle-arrow::before {
     width: 11px;
     height: 2px;
-    left: -2px;
+    left: -3px;
   }
 
   .site-navigation__toggle-arrow::after {
-    top: calc(50% + 2px);
+    top: calc(50% - 7px);
   }
 
   .site-navigation__toggle-arrow::before {
-    top: calc(50% - 5px);
+    top: calc(50% - 13px);
   }
 }
