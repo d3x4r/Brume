@@ -63,6 +63,7 @@
   slider.on('swipeleft', '.comment-slide', nextSlide);
   slider.on('swiperight', '.comment-slide', prevSlide);
 
+
   sliderControls.on('click', '.slider-controls__item--comment', function () {
     const buttonPosition = $(this).index();
     slideChoose(buttonPosition);
