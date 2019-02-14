@@ -6,8 +6,8 @@ var mainMenu = document.querySelector('.site-navigation__list');
 
 
 var closeMenu = function () {
-    menuButton.classList.remove('site-navigation__toggle--open');
-    mainMenu.classList.remove('site-navigation__list--open');
+  menuButton.classList.remove('site-navigation__toggle--open');
+  mainMenu.classList.remove('site-navigation__list--open');
 };
 
 var changeMenuStatus = function () {
