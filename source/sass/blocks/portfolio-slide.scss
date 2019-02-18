@@ -10,11 +10,6 @@
   cursor: pointer;
 }
 
-
-// .portfolio-slide:first-child {
-//   // margin-left: 9vw;
-// }
-
 .portfolio-slide__title {
   display: none;
 }
@@ -158,21 +153,25 @@
     transform: translate(0, 0);
 
     &--canteen {
+      width: 839px;
       min-width: 839px;
       left: -32%;
     }
 
     &--living-room-1 {
+      width: 999px;
       min-width: 999px;
       left: -69%;
     }
 
     &--living-room-2 {
+      width: 416px;
       min-width: 416px;
       min-height: auto;
     }
 
     &--hotel {
+      width: 806px;
       min-width: 806px;
       left: -144%;
     }

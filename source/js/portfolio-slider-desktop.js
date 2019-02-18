@@ -15,7 +15,6 @@
   if ($('html').prop('clientWidth') >= MAX_RESIZE_WIDTH) {
     window.slidePosition = 0;
   }
-
   const slideToRight = () => {
     slides = $('.portfolio-slide');
     slidesCount = slides.length;
@@ -38,8 +37,6 @@
       'transform': `translateX(-${window.slidePosition}px)`,
     });
   };
-
-
 
   if ($('html').prop('clientWidth') >= MAX_RESIZE_WIDTH) {
     slideButtonRight.on('click', slideToRight);
